@@ -52,3 +52,7 @@ ru:
       day: День
       month: Месяц
       year: Год
+  app:
+    controllers:
+      calls:
+        

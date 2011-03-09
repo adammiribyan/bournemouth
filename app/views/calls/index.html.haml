@@ -1,0 +1,23 @@
+%h1 Listing calls
+
+%table
+  %tr
+    %th Cause
+    %th Source
+    %th Status
+    %th
+    %th
+    %th
+
+  - @calls.each do |call|
+    %tr
+      %td= call.cause
+      %td= call.source
+      %td= call.status
+      %td= link_to 'Show', call
+      %td= link_to 'Edit', edit_call_path(call)
+      %td= link_to 'Destroy', call, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Call', new_call_path
