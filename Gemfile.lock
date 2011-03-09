@@ -30,6 +30,8 @@ GEM
     activesupport (3.0.4)
     arel (2.0.9)
     bcrypt-ruby (2.1.4-x86-mingw32)
+    bson (1.2.4)
+    bson_ext (1.2.4)
     builder (2.1.2)
     capistrano (2.5.19)
       highline
@@ -59,6 +61,13 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    mongo (1.2.4)
+      bson (>= 1.2.4)
+    mongoid (2.0.0.rc.7)
+      activemodel (~> 3.0)
+      mongo (~> 1.2)
+      tzinfo (~> 0.3.22)
+      will_paginate (~> 3.0.pre)
     mutter (0.5.3)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
@@ -94,17 +103,20 @@ GEM
     treetop (1.4.9)
       polyglot (>= 0.3.1)
     tzinfo (0.3.24)
+    will_paginate (3.0.pre2)
 
 PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
   bcrypt-ruby
+  bson_ext (~> 1.2)
   capistrano
   haml
   haml-rails
   jquery-rails (~> 0.2)
   less
+  mongoid (= 2.0.0.rc.7)
   rails (= 3.0.4)
   russian
   simple_form
