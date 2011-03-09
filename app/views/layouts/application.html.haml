@@ -8,4 +8,11 @@
 		= javascript_include_tag "jquery.min", "application", "rails"
 		= csrf_meta_tag
 	%body
+		.pageContainer
+			.header
+				%ul
+					%li.logo
+						= link_to image_tag("logo.png"), ""
+					%li.logout= link_to "Выйти", ""
+					
 		= yield

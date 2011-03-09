@@ -1,0 +1,136 @@
+@import "shared/reset.css";
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+@text_color: #2b2d2f;
+@lid_text_color: #51555e;
+@brighter_text_color: #606060;
+@border_color: #ccc;
+@a_link_color: #51555e;
+@a_hover_color: black; 
+
+
+body.specialLayout { background: #4b4c4f; }
+body {
+	color: @text_color;
+  font-size: 12px;
+  font-family: Helvetica, sans-serif;
+  background: #cddbee url("/images/bg_blue.png") repeat-x;
+}
+
+a:link, a:visited {
+	color: @a_link_color;
+	text-decoration: underline;	
+}
+a:hover {
+	color: @a_hover_color;
+	text-decoration: underline;
+}
+
+p {
+  font-size: 1em; /* 12px */
+  line-height: 1.5em; /* 18px */
+  margin: 0 0 1.5em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: white 1px 1px;
+}
+
+h1 {
+  font-size: 2.1667em; /* 26px */
+  line-height: 1.3846em; /* 36px */
+  margin-top: 0.6923em;
+  margin-bottom: 0em;
+}
+h2 {
+  font-size: 2em; /* 24px */
+  line-height: 1.5em; /* 36px */
+  margin-top: 0.75em;
+  margin-bottom: 0em;
+}
+h3 {	
+  font-size: 1.8333em; /* 22px */
+  line-height: 1.6364em; /* 36px */
+  margin-top: 0.8182em;
+  margin-bottom: 0em;
+}
+h4 {
+	color: @lid_text_color;
+  font-size: 1.6667em; /* 20px */
+  line-height: 1.8em; /* 36px */
+  margin-top: 0.9em;
+  margin-bottom: 0em;
+}
+h5 {
+  font-size: 1.5em; /* 18px */
+  line-height: 1em; /* 18px */
+  margin-top: 1em;
+  margin-bottom: 0em;
+}
+h6 {
+  font-size: 1.3333em; /* 16px */
+  line-height: 1.125em; /* 18px */
+  margin-top: 1.125em;
+  margin-bottom: 0em;
+}
+span.t {
+  font-size: 1.1667em; /* 14px */
+  line-height: 1.2857em; /* 18px */
+  margin-top: 1.2857em;
+  margin-bottom: 0em;
+}
+small {
+  font-size: 0.8333em; /* 10px */
+  line-height: 1.8em; /* 18px */
+  margin-top: 1.8em;
+  margin-bottom: 0em;
+}
+
+.pageContainer {}
+.header {
+  background: url("/images/bg_header.png") left bottom repeat-x;
+  height: 40px; 
+  margin-bottom: 11px; 
+  font-size: 1.083em; 
+  text-align: center; 
+  padding-top: 6px;
+  min-width: 970px;  
+  position:relative; 
+  z-index: 1000;
+  
+  a {
+  	color: #51555e; 
+  	text-shadow: 0 1px #FFFFFF; 
+  	text-decoration: none; 
+  	font-weight: bold;
+  }
+  
+  ul {
+  	li {
+  		position: absolute; 
+  		top: 6px;
+  		padding: 3px 2px; 
+  		text-align: center; 
+  		width: 58px;
+  	}
+  	
+  	.logo {
+  		left: 50%; 
+  		margin-left: -48px; 
+  		width: 137px;
+  	}
+  	
+  	.logout {
+  		top: -1px; 
+  		height: 20px;
+		  border-left: 1px solid #d4d8db;
+		  padding-top: 10px; 
+		  padding-left: 5px; 
+		  right: 7px;
+  	}
+  }
+}
